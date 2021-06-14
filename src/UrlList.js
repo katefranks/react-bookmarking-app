@@ -6,8 +6,10 @@ class UrlList extends React.Component {
 
   render(){
     const url = this.props.bookmarks.map((bookmark, index) => <li key={index}>{bookmark.url}</li>)
+    const title = this.props.bookmarks.map((bookmark, index) => <li key={index}>{bookmark.title}</li>)
+    const tag = this.props.bookmarks.map((bookmark, index) => <li key={index}>{bookmark.tag}</li>)
     return(
-      <ul>{url}</ul>
+      <ul>{url}{title}{tag}</ul>
     )
   }
 }
