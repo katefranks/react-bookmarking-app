@@ -1,6 +1,6 @@
 import React from 'react';
 
-class UserForm extends React.Component {
+class BookmarkForm extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -16,7 +16,7 @@ class UserForm extends React.Component {
   }
   handleSubmit(event){
     event.preventDefault()
-    this.props.receiveData({url: this.state.url, title: this.state.title, tag: this.state.tag})
+    this.props.handleReceiveData({url: this.state.url, title: this.state.title, tag: this.state.tag})
     this.setState({url: "", title: "", tag: ""})
   }
   render(){
@@ -24,24 +24,25 @@ class UserForm extends React.Component {
   const formStyle = {
     display: 'flex',
     flexDirection: 'column',
-    width: '200px'
+    alignItems: 'center',
+    marginTop: '20px',
   };
 
     return(
       <form style={formStyle} action="">
-      <label htmlFor="URL">URL</label>
-      <input id="URL" type="text" value={this.state.url} onChange={(event) => this.handleChange(event, 'url')}/>
-      <label htmlFor="title">Title</label>
-      <input id="title" type="text" value={this.state.title} onChange={(event) => this.handleChange(event, 'title')} />
-      <label htmlFor="tag">Tag</label>
-      <input id="tag" type="text" value={this.state.tag} onChange={(event) => this.handleChange(event, 'tag')}/>
-      <button onClick={this.handleSubmit}>Submit</button>
+        <label htmlFor="URL">URL</label>
+          <input id="URL" type="text" value={this.state.url} onChange={(event) => this.handleChange(event, 'url')}/>
+        <label htmlFor="title">Title</label>
+          <input id="title" type="text" value={this.state.title} onChange={(event) => this.handleChange(event, 'title')} />
+        <label htmlFor="tag">Tag</label>
+          <input id="tag" type="text" value={this.state.tag} onChange={(event) => this.handleChange(event, 'tag')}/>
+        <button onClick={this.handleSubmit}>Submit</button>
       </form>
     )
   }
 }
 
-export default UserForm;
+export default BookmarkForm;
 
 
 // render(){
