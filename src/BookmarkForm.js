@@ -16,7 +16,7 @@ class BookmarkForm extends React.Component {
   }
   handleSubmit(event){
     event.preventDefault()
-    this.props.handleReceiveData({url: this.state.url, title: this.state.title, tag: this.state.tag})
+    this.props.addBookmark({url: this.state.url, title: this.state.title, tag: this.state.tag})
     this.setState({url: "", title: "", tag: ""})
   }
   render(){
@@ -43,32 +43,3 @@ class BookmarkForm extends React.Component {
 }
 
 export default BookmarkForm;
-
-
-// render(){
-//  This or inline (below)
-// const formStyle = {
-//   display: 'flex',
-//   flexDirection: 'column'
-// };
-//
-//   return(
-//     <form style={{display: 'flex', flexDirection: 'column'}} action="">
-//     <label htmlFor="URL">URL</label>
-//     <input id="URL" type="text"/>
-//     <label htmlFor="title">Title</label>
-//     <input id="title" type="text"/>
-//     <label htmlFor="tag">Tag</label>
-//     <input id="tag" type="text"/>
-//     <button>Submit</button>
-//     </form>
-//   )
-// }
-// }
-//
-// export default UserForm;
-
-
-//style={{display: 'flex', flexDirection: 'column'}}
-
-//onChange={(e) => this.handleChange(e, 'tag')}/>

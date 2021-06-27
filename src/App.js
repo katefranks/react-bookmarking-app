@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import BookmarkForm from './BookmarkForm';
-import BookmarkList from './BookmarkList';
+// import BookmarkList from './BookmarkList';
+import TagList from './TagList';
 
 class App extends React.Component {
   constructor(props){
@@ -9,7 +10,7 @@ class App extends React.Component {
     this.state = {
       bookmarks : []
       }
-      this.handleReceiveData = this.handleReceiveData.bind(this);
+      this.addBookmark = this.addBookmark.bind(this);
     }
 
     componentDidMount(){
@@ -48,7 +49,7 @@ class App extends React.Component {
       this.setState({ bookmarks });
     }
 
-    handleReceiveData(formData){
+    addBookmark(formData){
       console.log(formData);
       // let bookmarks = this.state.bookmarks;
       const bookmarks = [ ...this.state.bookmarks ];
@@ -58,8 +59,10 @@ class App extends React.Component {
   render(){
     return(
       <div>
-      <BookmarkForm handleReceiveData={this.handleReceiveData}/>
-      <BookmarkList bookmarks={this.state.bookmarks}/>
+        <h1>Bookmarks</h1>
+        <BookmarkForm addBookmark={this.addBookmark}/>
+
+        <TagList bookmarks={this.state.bookmarks} />
       </div>
     )
   }
@@ -70,18 +73,10 @@ export default App;
 
 
 
-// value value.title value.url
+//       <BookmarkList bookmarks={this.state.bookmarks}/>
 
 //Create a bookmarking app where you can save URLs. It should have a form
   // where you enter the URL, a title, and a "tag". There should be a list of all
   // the URLs, as well as a list of all the tags. When you click on a tag, the link list
   // should show only those tags. Hint: which tag is selected is "application
-  // state". When you filter the data, be careful that you do not loose the other
-  // bookmarks.
-
-//Components:
-// -Main component (App)
-//   -3 components off of that:
-//     -form
-//     -URL
-//     -tags list
+  // state". When you filter the data, be careful that you do not loose the other bookmarks.
