@@ -14,10 +14,8 @@ class TagList extends React.Component {
 
     const categories = this.props.bookmarks.map(bookmark => bookmark.tag)
       //an array of tags (duplicates exist)
-      console.log('categories', categories);
     const uniqueCategories = [...new Set(categories)];
       //an array of tags (no duplicates)
-      console.log('uniqueCategories', uniqueCategories);
 
     const headings = uniqueCategories.map(tag => (
       <button key={tag} onClick={() => this.setState({ selection: tag })}>
@@ -34,7 +32,7 @@ class TagList extends React.Component {
     return(
       <div>
         <h2>Bookmark List:</h2>
-        {headings}
+        <div className="headings">{headings}</div>
         <ul>
           { bookmarks }
         </ul>

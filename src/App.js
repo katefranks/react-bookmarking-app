@@ -45,6 +45,12 @@ class App extends React.Component {
           title: 'Instagram',
           tag: '#social',
         },
+        {
+          id: 5,
+          url: 'http://news.google.com',
+          title: 'Google News',
+          tag: '#news',
+        },
       ];
       this.setState({ bookmarks });
     }

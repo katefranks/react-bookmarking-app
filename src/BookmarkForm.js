@@ -31,11 +31,11 @@ class BookmarkForm extends React.Component {
     return(
       <form style={formStyle} action="">
         <label htmlFor="url">URL</label>
-          <input id="url" type="text" value={this.state.url} onChange={(event) => this.handleChange(event, 'url')}/>
+          <input id="url" type="text" placeholder="http://" value={this.state.url} onChange={(event) => this.handleChange(event, 'url')} />
         <label htmlFor="title">Title</label>
-          <input id="title" type="text" value={this.state.title} onChange={(event) => this.handleChange(event, 'title')} />
+          <input id="title" type="text" placeholder="Bookmark Title" value={this.state.title} onChange={(event) => this.handleChange(event, 'title')} />
         <label htmlFor="tag">Tag</label>
-          <input id="tag" type="text" value={this.state.tag} onChange={(event) => this.handleChange(event, 'tag')}/>
+          <input id="tag" type="text" placeholder="#" value={this.state.tag} onChange={(event) => this.handleChange(event, 'tag')}/>
         <button onClick={this.handleSubmit}>Submit</button>
       </form>
     )
