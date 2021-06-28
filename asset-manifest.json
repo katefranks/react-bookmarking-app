@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-bookmarking-app/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/react-bookmarking-app/static/js/main.9d86e439.chunk.js",
-    "main.js.map": "/react-bookmarking-app/static/js/main.9d86e439.chunk.js.map",
-    "runtime-main.js": "/react-bookmarking-app/static/js/runtime-main.98797dd6.js",
-    "runtime-main.js.map": "/react-bookmarking-app/static/js/runtime-main.98797dd6.js.map",
-    "static/js/2.34a714bf.chunk.js": "/react-bookmarking-app/static/js/2.34a714bf.chunk.js",
-    "static/js/2.34a714bf.chunk.js.map": "/react-bookmarking-app/static/js/2.34a714bf.chunk.js.map",
-    "static/js/3.bab1e656.chunk.js": "/react-bookmarking-app/static/js/3.bab1e656.chunk.js",
-    "static/js/3.bab1e656.chunk.js.map": "/react-bookmarking-app/static/js/3.bab1e656.chunk.js.map",
+    "main.js": "/react-bookmarking-app/static/js/main.f6d4cd5e.chunk.js",
+    "main.js.map": "/react-bookmarking-app/static/js/main.f6d4cd5e.chunk.js.map",
+    "runtime-main.js": "/react-bookmarking-app/static/js/runtime-main.d50daecc.js",
+    "runtime-main.js.map": "/react-bookmarking-app/static/js/runtime-main.d50daecc.js.map",
+    "static/js/2.65ba80f2.chunk.js": "/react-bookmarking-app/static/js/2.65ba80f2.chunk.js",
+    "static/js/2.65ba80f2.chunk.js.map": "/react-bookmarking-app/static/js/2.65ba80f2.chunk.js.map",
+    "static/js/3.91dfdc8a.chunk.js": "/react-bookmarking-app/static/js/3.91dfdc8a.chunk.js",
+    "static/js/3.91dfdc8a.chunk.js.map": "/react-bookmarking-app/static/js/3.91dfdc8a.chunk.js.map",
     "index.html": "/react-bookmarking-app/index.html",
     "static/css/main.9d5b29c0.chunk.css.map": "/react-bookmarking-app/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.34a714bf.chunk.js.LICENSE.txt": "/react-bookmarking-app/static/js/2.34a714bf.chunk.js.LICENSE.txt"
+    "static/js/2.65ba80f2.chunk.js.LICENSE.txt": "/react-bookmarking-app/static/js/2.65ba80f2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.98797dd6.js",
-    "static/js/2.34a714bf.chunk.js",
+    "static/js/runtime-main.d50daecc.js",
+    "static/js/2.65ba80f2.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.9d86e439.chunk.js"
+    "static/js/main.f6d4cd5e.chunk.js"
   ]
 }
