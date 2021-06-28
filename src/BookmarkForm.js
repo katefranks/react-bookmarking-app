@@ -30,8 +30,8 @@ class BookmarkForm extends React.Component {
 
     return(
       <form style={formStyle} action="">
-        <label htmlFor="URL">URL</label>
-          <input id="URL" type="text" value={this.state.url} onChange={(event) => this.handleChange(event, 'url')}/>
+        <label htmlFor="url">URL</label>
+          <input id="url" type="text" value={this.state.url} onChange={(event) => this.handleChange(event, 'url')}/>
         <label htmlFor="title">Title</label>
           <input id="title" type="text" value={this.state.title} onChange={(event) => this.handleChange(event, 'title')} />
         <label htmlFor="tag">Tag</label>

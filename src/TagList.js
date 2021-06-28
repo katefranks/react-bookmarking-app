@@ -4,6 +4,7 @@ import BookmarkList from './BookmarkList';
 class TagList extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       selection: '',
       // tags: [],
@@ -13,17 +14,21 @@ class TagList extends React.Component {
 
     const categories = this.props.bookmarks.map(bookmark => bookmark.tag)
       //an array of tags (duplicates exist)
+      console.log('categories', categories);
     const uniqueCategories = [...new Set(categories)];
       //an array of tags (no duplicates)
+      console.log('uniqueCategories', uniqueCategories);
+
     const headings = uniqueCategories.map(tag => (
       <button key={tag} onClick={() => this.setState({ selection: tag })}>
         {tag}
       </button>
     ));
+    console.log('headings', headings);
 
     const bookmarks = this.props.bookmarks
       .filter(bookmark => bookmark.tag === this.state.selection)
-      .map((bookmark) => <BookmarkList bookmark={bookmark} bookmarks={this.props.bookmarks}/>);
+      .map((bookmark) => <BookmarkList bookmark={bookmark} />);
 
 
     return(
@@ -40,3 +45,5 @@ class TagList extends React.Component {
 }
 
 export default TagList;
+
+// <BookmarkList bookmark={this.state.bookmark} bookmarks={this.props.bookmarks} selection={this.state.selection}/>
